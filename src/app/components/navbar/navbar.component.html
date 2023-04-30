@@ -1,0 +1,91 @@
+<nav class="navbar-navbar">
+  <div class="navbar-desktop">
+    <div class="navbar-main">
+      <div class="navbar-branding">
+        <a routerLink="/" class="navbar-navlink">
+          <img
+            [attr.alt]="Branding_alt"
+            [attr.src]="Branding_src"
+            class="navbar-finbest"
+          />
+        </a>
+      </div>
+      <div class="navbar-links">
+        <a routerLink="/" class="link">{{ Link_1 }}</a>
+        <a routerLink="/" class="link">{{ Link_2 }}</a>
+        <a routerLink="/" class="link">{{ Link_3 }}</a>
+        <a routerLink="/" class="link">{{ Link_4 }}</a>
+      </div>
+    </div>
+    <div class="navbar-quick-actions">
+      <a routerLink="/" class="link navbar-log-in">Log in</a>
+      <a routerLink="/" class="navbar-navlink1">
+        <div class="navbar-sign-up-btn">
+          <span class="navbar-sign-up">Sign up</span>
+        </div>
+      </a>
+      <img
+        id="open-mobile-menu"
+        [attr.alt]="pastedImage_alt"
+        [attr.src]="pastedImage_src"
+        class="navbar-hamburger-menu"
+      />
+    </div>
+  </div>
+  <div id="mobile-menu" class="navbar-mobile">
+    <div class="navbar-top">
+      <img [attr.alt]="image_alt" [attr.src]="image_src" class="navbar-image" />
+      <svg id="close-mobile-menu" viewBox="0 0 1024 1024" class="navbar-icon">
+        <path
+          d="M810 274l-238 238 238 238-60 60-238-238-238 238-60-60 238-238-238-238 60-60 238 238 238-238z"
+        ></path>
+      </svg>
+    </div>
+    <div class="navbar-links1">
+      <a routerLink="/" class="navbar-navlink2">{{ text1 }}</a>
+      <a routerLink="/" class="navbar-navlink3">{{ text11 }}</a>
+      <a routerLink="/" class="navbar-navlink4">{{ text12 }}</a>
+      <a routerLink="/" class="navbar-navlink5">{{ text13 }}</a>
+      <div class="navbar-buttons">
+        <a routerLink="/" class="navbar-navlink6">
+          <div class="navbar-btn">
+            <span class="navbar-text">{{ text131 }}</span>
+          </div>
+        </a>
+        <a routerLink="/" class="navbar-navlink7">
+          <div class="navbar-btn1">
+            <span class="navbar-text1">{{ text1311 }}</span>
+          </div>
+        </a>
+      </div>
+    </div>
+  </div>
+  <div>
+    <dangerous-html
+      html=" <script>
+    /*
+    Mobile menu - Code Embed
+    */
+
+    // Mobile menu
+    const mobileMenu = document.querySelector('#mobile-menu');
+
+    // Buttons
+    const closeButton = document.querySelector('#close-mobile-menu');
+    const openButton = document.querySelector('#open-mobile-menu');
+
+    if (mobileMenu && closeButton && openButton) {
+      // On openButton click, set the mobileMenu position left to -100vw
+      openButton.addEventListener('click', function () {
+        mobileMenu.style.transform = 'translateX(0%)';
+      });
+
+      // On closeButton click, set the mobileMenu position to 0vw
+      closeButton.addEventListener('click', function () {
+        mobileMenu.style.transform = 'translateX(100%)';
+      });
+    }
+  </script>"
+    ></dangerous-html>
+  </div>
+</nav>

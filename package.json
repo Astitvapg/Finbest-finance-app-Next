@@ -1,23 +1,33 @@
 {
   "name": "finbest-finance-app",
-  "version": "1.0.0",
-  "description": "A next project generated based on a UIDL document",
-  "main": "index.js",
+  "author": "teleportHQ",
+  "version": "0.0.0",
   "scripts": {
-    "dev": "next",
-    "build": "next build",
-    "start": "next start",
-    "export": "next export"
+    "ng": "ng",
+    "start": "ng serve",
+    "build": "ng build",
+    "watch": "ng build --watch --configuration development"
   },
-  "author": "TeleportHQ",
-  "license": "MIT",
+  "private": true,
   "dependencies": {
-    "next": "^12.1.0",
-    "react": "^17.0.2",
-    "react-dom": "^17.0.2",
-    "@lottiefiles/lottie-player": "1.6.0",
-    "dangerous-html": "0.1.12",
-    "prop-types": "15.7.2"
+    "@angular/common": "^14.0.0",
+    "@angular/compiler": "^14.0.0",
+    "@angular/core": "^14.0.0",
+    "@angular/forms": "^14.0.0",
+    "@angular/platform-browser": "^14.0.0",
+    "@angular/platform-browser-dynamic": "^14.0.0",
+    "@angular/router": "^14.0.0",
+    "core-js": "~3.0.1",
+    "rxjs": "~6.6.0",
+    "tslib": "^2.1.0",
+    "zone.js": "~0.11.4",
+    "dangerous-html": "0.1.12"
   },
-  "devDependencies": {}
+  "devDependencies": {
+    "@angular-devkit/build-angular": "^14.0.0",
+    "@angular/cli": "^14.0.0",
+    "@angular/compiler-cli": "^14.0.0",
+    "@types/node": "^12.11.1",
+    "typescript": "^4.7.3"
+  }
 }
